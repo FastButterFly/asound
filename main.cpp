@@ -18,7 +18,7 @@ int main() {
 
     long long fs = 44100;
 
-    double volume = 1;
+    double volume = 1.0;
 
     Frequency freqs[] = {
     {   .hz = 440, .amplitude = .8  },
