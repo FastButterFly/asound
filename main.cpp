@@ -35,7 +35,7 @@ int main() {
         }
 
         short probel = ((a * volume) / (sizeof(freqs) / sizeof(Frequency))) * sample;
-        short prober = ((a * 0.92 * volume) / (sizeof(freqs) / sizeof(Frequency))) * sample;
+        short prober = ((a * 0.95 * volume) / (sizeof(freqs) / sizeof(Frequency))) * sample;
 
         stream.write(reinterpret_cast<const char*>(&probel), sizeof(probel));
         stream.write(reinterpret_cast<const char*>(&prober), sizeof(prober));
